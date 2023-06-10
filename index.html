@@ -6,73 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Criativa</title>
-    <style>
-
-        body {
-            background-color: #e5e5e5;
-            color: #24282b;
-
-            text-align: center;
-        }
-
-        button {
-            color: #ff5E84;
-
-            border: none;
-
-            font-weight: bold;
-            background: none;
-        }
-        button.fat {
-            color: white;
-            background: #ff5E84;
-        }
-
-        #footer a {
-            color: #25282B;
-            text-decoration: none;
-        }
-
-        .hide {
-            display: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="logo.png" alt="imagem da logomarca">
 
-    <p>
-        Ficar em casa em períodos longos, não deve ser nada fácil.
-    </p>
+    <div id="container">
 
-    <p>
-        Por isso. iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
-        livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
-    </p>
+        <section id="intro">
 
-    <p>
-        Comece clicando em ver ideias para ver as ideias 
-        cadastradas e contribua adicionado a sua ideia.
-    </p>
+            <header>
+                <img src="logo.png" alt="imagem da logomarca">
+            </header>
 
-    <button>Adicionar Ideia</button>
-    <button class="fat">Ver Ideias</button>
+            <main>
+                <p>
+                    Ficar em casa em períodos longos, não deve ser nada fácil.
+                </p>
 
-    <p id="footer">Com ❤️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+                <p>
+                    Por isso. iremos catalogar ideias, <strong>brincadeiras, jogos, filmes,
+                        livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais
+                    interessante.
+                </p>
 
-    <script>
+                <p>
+                    Comece clicando em ver ideias para ver as ideias
+                    cadastradas e contribua adicionado a sua ideia.
+                </p>
 
-        document
-            .querySelector("button.fat")
-            .addEventListener("click", function(){
-                document
-                .querySelector("#footer")
-                .classList
-                .toggle("hide")
-            })
-    </script>
+            </main>
+
+            <section id="buttons">
+                <button>Adicionar Ideia</button>
+                <button class="fat">Ver Ideias</button>
+            </section>
+
+
+            <footer id="footer">Com ❤️ <a href="http://rocketseat.com.br">Rocketseat</a>
+            </footer>
+
+        </section>
+
+        <section id="last-iddeias">
+            <div class="idea">
+                <img 
+                src="https://cdn-icons-png.flaticon.com/128/2729/2729007.png" 
+                alt="Imagem de Cruso de Programação">
+
+                <div class="content">
+                    <h3>Cursos de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description"></div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perspiciatis natus quibusdam eos esse, eveniet voluptate molestiae corrupti numquam sit illo est expedita sequi quasi iure omnis facere veritatis vero!
+                </div>
+                <a href="#">Ir para a Ideia</a>
+            </div>
+
+            <div class="idea">
+                <img 
+                src="https://cdn-icons-png.flaticon.com/128/2729/2729005.png" 
+                alt="Imagem de Exercício">
+
+                <div class="content">
+                    <h3>Exercício</h3>
+                    <p>Saúde</p>
+                    <div class="description"></div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perspiciatis natus quibusdam eos esse, eveniet voluptate molestiae corrupti numquam sit illo est expedita sequi quasi iure omnis facere veritatis vero!
+                </div>
+                <a href="#">Ir para a Ideia</a>
+            </div>
+
+            <div class="idea">
+                <img 
+                src="https://cdn-icons-png.flaticon.com/128/2729/2729027.png" 
+                alt="Imagem de Meditação">
+
+                <div class="content">
+                    <h3>Meditação</h3>
+                    <p>Mentalidade</p>
+                    <div class="description"></div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt perspiciatis natus quibusdam eos esse, eveniet voluptate molestiae corrupti numquam sit illo est expedita sequi quasi iure omnis facere veritatis vero!
+                </div>
+                <a href="#">Ir para a Ideia</a>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
